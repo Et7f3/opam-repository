@@ -8,7 +8,7 @@ dev-repo: "git://github.com/ygrek/ocurl.git"
 bug-reports: "https://github.com/ygrek/ocurl/issues"
 tags: ["org:ygrek" "clib:curl"]
 build: [
-  ["./configure"]
+  ["./configure" "--host" "x86_64-w64-mingw32"]
   [make]
   [make "test"] {with-test}
   [make "doc"] {with-doc}
